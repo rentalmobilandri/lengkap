@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Mobil Andri - Terlengkap & Termurah</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/favicon.ico">
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -15,7 +18,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        /* Animasi berdenyut untuk tombol WhatsApp */
+        /* Animasi berdenyut untuk tombol WhatsApp berbentuk pil */
         @keyframes pulse-wa {
             0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
             70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
@@ -34,7 +37,8 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo & Kontak -->
                 <div class="flex-shrink-0 flex items-center gap-3">
-                    <i class="fa-solid fa-car text-blue-600 text-3xl md:text-4xl"></i>
+                    <!-- Icon Image Custom (Bisa di-load tanpa lazy karena di bagian paling atas) -->
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/bgrem_gambar%20icon.webp" alt="Rental Andri Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain">
                     <div class="flex flex-col">
                         <span class="font-bold text-xl md:text-2xl text-gray-900 leading-tight">Rental<span class="text-blue-600">Andri</span></span>
                         <div class="flex flex-col lg:flex-row lg:gap-3 mt-1">
@@ -49,10 +53,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- Menu (Disembunyikan di layar kecil agar tidak menabrak kontak) -->
+                <!-- Menu -->
                 <div class="hidden md:flex space-x-6">
                     <a href="#beranda" class="text-gray-600 hover:text-blue-600 font-semibold transition text-sm lg:text-base">Beranda</a>
                     <a href="#keunggulan" class="text-gray-600 hover:text-blue-600 font-semibold transition text-sm lg:text-base">Keunggulan</a>
+                    <a href="#testimoni" class="text-gray-600 hover:text-blue-600 font-semibold transition text-sm lg:text-base">Testimoni</a>
                     <a href="#armada" class="text-gray-600 hover:text-blue-600 font-semibold transition text-sm lg:text-base">Armada</a>
                     <a href="#lokasi" class="text-gray-600 hover:text-blue-600 font-semibold transition text-sm lg:text-base">Lokasi</a>
                 </div>
@@ -61,8 +66,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="beranda" class="relative pt-20 pb-32 flex items-center justify-center min-h-[80vh]" style="background-image: url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1920&auto=format&fit=crop'); background-size: cover; background-position: center;">
-        <div class="absolute inset-0 bg-black opacity-60"></div>
+    <section id="beranda" class="relative pt-20 pb-32 flex items-center justify-center min-h-[80vh]" style="background-image: url('https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/16.webp'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
         <div class="relative z-10 text-center px-4 max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
             <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">Perjalanan Nyaman,<br>Harga Aman di Kantong</h1>
             <p class="text-lg md:text-xl text-gray-200 mb-10">Pusat sewa mobil terlengkap dengan armada tahun muda, terawat, dan siap menemani perjalanan bisnis atau liburan Anda.</p>
@@ -105,7 +110,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Card 1 -->
                 <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=600&auto=format&fit=crop" alt="Unit Milik Sendiri" class="w-full h-48 object-cover">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/07.webp" alt="Unit Milik Sendiri" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-900 mb-2">Unit Milik Sendiri</h3>
                         <p class="text-gray-600 text-sm">Bukan perantara atau makelar. Semua mobil dikelola langsung oleh tim kami sehingga kualitas selalu terjamin.</p>
@@ -113,7 +118,7 @@
                 </div>
                 <!-- Card 2 -->
                 <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=600&auto=format&fit=crop" alt="Terlengkap" class="w-full h-48 object-cover">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/06.webp" alt="Terlengkap" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-900 mb-2">Armada Terlengkap</h3>
                         <p class="text-gray-600 text-sm">Tersedia beragam jenis mobil mulai dari City Car, MPV keluarga, hingga Minibus untuk rombongan wisata.</p>
@@ -121,26 +126,65 @@
                 </div>
                 <!-- Card 3 -->
                 <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1580519542036-ed47f3e42218?q=80&w=600&auto=format&fit=crop" alt="Harga Bersaing" class="w-full h-48 object-cover">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/15.webp" alt="Unit Tahun Muda" class="w-full h-48 object-cover object-top" loading="lazy">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Harga Bersaing</h3>
-                        <p class="text-gray-600 text-sm">Dapatkan penawaran harga terbaik yang transparan tanpa biaya tersembunyi. Pas di kantong Anda!</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Unit Tahun Muda</h3>
+                        <p class="text-gray-600 text-sm">Kenyamanan adalah prioritas. Kami menyediakan mobil keluaran terbaru dengan mesin sehat dan interior bersih.</p>
                     </div>
                 </div>
                 <!-- Card 4 -->
                 <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
-                    <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=600&auto=format&fit=crop" alt="Unit Tahun Muda" class="w-full h-48 object-cover">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/14.webp" alt="Harga Bersaing" class="w-full h-48 object-cover object-center" loading="lazy">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Unit Tahun Muda</h3>
-                        <p class="text-gray-600 text-sm">Kenyamanan adalah prioritas. Kami menyediakan mobil keluaran terbaru dengan mesin sehat dan interior bersih.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Harga Bersaing</h3>
+                        <p class="text-gray-600 text-sm">Dapatkan penawaran harga terbaik yang transparan tanpa biaya tersembunyi. Pas di kantong Anda!</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Testimoni Asli Google Maps (Dipindah ke atas Armada) -->
+    <section id="testimoni" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Apa Kata Pelanggan Kami?</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
+                <p class="text-gray-600">Ulasan asli pelanggan kami dari Google Maps.</p>
+            </div>
+
+            <!-- Grid Screenshot Review -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300 bg-white" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/review01.webp" alt="Ulasan Pelanggan 1" class="w-full h-auto object-contain" loading="lazy">
+                </div>
+                <!-- Review 2 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300 bg-white" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/review02.webp" alt="Ulasan Pelanggan 2" class="w-full h-auto object-contain" loading="lazy">
+                </div>
+                <!-- Review 3 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300 bg-white" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/review03.webp" alt="Ulasan Pelanggan 3" class="w-full h-auto object-contain" loading="lazy">
+                </div>
+                <!-- Review 4 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300 bg-white" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/review04.webp" alt="Ulasan Pelanggan 4" class="w-full h-auto object-contain" loading="lazy">
+                </div>
+                <!-- Review 5 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300 bg-white" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/review05.webp" alt="Ulasan Pelanggan 5" class="w-full h-auto object-contain" loading="lazy">
+                </div>
+                <!-- Review 6 -->
+                <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200 hover:shadow-2xl transition duration-300 bg-white" data-aos="fade-up" data-aos-delay="600">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/review06.webp" alt="Ulasan Pelanggan 6" class="w-full h-auto object-contain" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Armada (Daftar Mobil) -->
-    <section id="armada" class="py-20 bg-gray-100">
+    <section id="armada" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pilihan Armada Kami</h2>
@@ -150,96 +194,46 @@
 
             <!-- Grid Mobil -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Innova -->
-                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="https://placehold.co/600x400/eeeeee/333333?text=Toyota+Innova" alt="Innova" class="w-full h-56 object-cover rounded-lg mb-4">
+                <!-- Innova Reborn -->
+                <div class="bg-gray-50 p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/08.webp" alt="Innova Reborn" class="w-full h-64 object-cover object-center rounded-lg mb-4" loading="lazy">
                     <h3 class="text-2xl font-bold text-gray-800 mb-2">Innova Reborn</h3>
                     <p class="text-gray-500 mb-4"><i class="fa-solid fa-user-group mr-2"></i>Kapasitas 7 Penumpang</p>
                 </div>
                 
-                <!-- Avanza Zenix -->
-                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="https://placehold.co/600x400/eeeeee/333333?text=Avanza+Zenix" alt="Avanza Zenix" class="w-full h-56 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Avanza / Zenix</h3>
+                <!-- New Avanza / Xenia -->
+                <div class="bg-gray-50 p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/12.webp" alt="New Avanza" class="w-full h-64 object-cover object-center rounded-lg mb-4" loading="lazy">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">New Avanza / Xenia</h3>
                     <p class="text-gray-500 mb-4"><i class="fa-solid fa-user-group mr-2"></i>Kapasitas 7 Penumpang</p>
                 </div>
 
-                <!-- Hiace -->
-                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="https://placehold.co/600x400/eeeeee/333333?text=Toyota+Hiace" alt="Hiace" class="w-full h-56 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Toyota Hiace</h3>
-                    <p class="text-gray-500 mb-4"><i class="fa-solid fa-user-group mr-2"></i>Kapasitas 14-15 Penumpang</p>
+                <!-- Honda Brio -->
+                <div class="bg-gray-50 p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/02.webp" alt="Honda Brio" class="w-full h-64 object-cover object-center rounded-lg mb-4" loading="lazy">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Honda Brio</h3>
+                    <p class="text-gray-500 mb-4"><i class="fa-solid fa-user-group mr-2"></i>Kapasitas 5 Penumpang</p>
                 </div>
 
-                <!-- Elf -->
-                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="400">
-                    <img src="https://placehold.co/600x400/eeeeee/333333?text=Isuzu+Elf" alt="Elf" class="w-full h-56 object-cover rounded-lg mb-4">
+                <!-- Isuzu Elf -->
+                <div class="bg-gray-50 p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/13.webp" alt="Isuzu Elf" class="w-full h-64 object-cover object-center rounded-lg mb-4" loading="lazy">
                     <h3 class="text-2xl font-bold text-gray-800 mb-2">Isuzu Elf</h3>
                     <p class="text-gray-500 mb-4"><i class="fa-solid fa-user-group mr-2"></i>Kapasitas 15-19 Penumpang</p>
                 </div>
 
-                <!-- Brio -->
-                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="500">
-                    <img src="https://placehold.co/600x400/eeeeee/333333?text=Honda+Brio" alt="Brio" class="w-full h-56 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Honda Brio</h3>
-                    <p class="text-gray-500 mb-4"><i class="fa-solid fa-user-group mr-2"></i>Kapasitas 5 Penumpang</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimoni -->
-    <section id="testimoni" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Apa Kata Pelanggan Kami?</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimoni 1 -->
-                <div class="bg-gray-50 p-8 rounded-2xl shadow relative" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fa-solid fa-quote-left text-4xl text-blue-200 absolute top-4 left-4"></i>
-                    <p class="text-gray-600 italic relative z-10 mb-6">"Pelayanan bang Andri luar biasa. Kemarin sewa Innova buat acara keluarga, mobilnya wangi, AC dingin banget, dan supirnya tepat waktu. Bakal langganan terus!"</p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://placehold.co/150x150/cccccc/333333?text=Foto+1" alt="Pelanggan 1" class="w-14 h-14 rounded-full object-cover border-2 border-blue-500">
-                        <div>
-                            <h4 class="font-bold text-gray-900">Dimas Pratama</h4>
-                            <div class="text-yellow-400 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
+                <!-- New Alphard -->
+                <div class="bg-gray-50 p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/15.webp" alt="New Alphard" class="w-full h-64 object-cover object-center rounded-lg mb-4" loading="lazy">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">New Alphard</h3>
+                    <p class="text-gray-500 mb-4"><i class="fa-solid fa-user-group mr-2"></i>Premium MPV</p>
                 </div>
 
-                <!-- Testimoni 2 -->
-                <div class="bg-gray-50 p-8 rounded-2xl shadow relative" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fa-solid fa-quote-left text-4xl text-blue-200 absolute top-4 left-4"></i>
-                    <p class="text-gray-600 italic relative z-10 mb-6">"Cari sewa Brio dadakan malam-malam, untung ketemu Rental Andri. Prosesnya cepat nggak ribet, syaratnya mudah. Mobilnya juga enak banget dipakai."</p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://placehold.co/150x150/cccccc/333333?text=Foto+2" alt="Pelanggan 2" class="w-14 h-14 rounded-full object-cover border-2 border-blue-500">
-                        <div>
-                            <h4 class="font-bold text-gray-900">Siti Nurbaya</h4>
-                            <div class="text-yellow-400 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimoni 3 -->
-                <div class="bg-gray-50 p-8 rounded-2xl shadow relative" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fa-solid fa-quote-left text-4xl text-blue-200 absolute top-4 left-4"></i>
-                    <p class="text-gray-600 italic relative z-10 mb-6">"Rombongan kantor pakai Hiace dari tempat Bang Andri. Harganya the best dibanding yang lain, unitnya masih mulus dan nyaman buat perjalanan jauh."</p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://placehold.co/150x150/cccccc/333333?text=Foto+3" alt="Pelanggan 3" class="w-14 h-14 rounded-full object-cover border-2 border-blue-500">
-                        <div>
-                            <h4 class="font-bold text-gray-900">Hendra Wijaya</h4>
-                            <div class="text-yellow-400 text-sm">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Bus Pariwisata -->
+                <div class="bg-gray-50 p-4 rounded-xl shadow-md border border-gray-100" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://raw.githubusercontent.com/rentalmobilandri/lengkap/refs/heads/main/images/17.webp" alt="Bus Pariwisata" class="w-full h-64 object-cover object-center rounded-lg mb-4" loading="lazy">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Bus Pariwisata</h3>
+                    <p class="text-gray-500 mb-4"><i class="fa-solid fa-user-group mr-2"></i>Kapasitas Rombongan</p>
                 </div>
             </div>
         </div>
@@ -275,8 +269,18 @@
     <footer class="bg-gray-900 text-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4">
             <h3 class="text-2xl font-bold mb-3">Rental Mobil Andri</h3>
-            <p class="text-gray-400 mb-6">Solusi transportasi aman, nyaman, dan terpercaya.</p>
+            <p class="text-gray-400 mb-2">Solusi transportasi aman, nyaman, dan terpercaya.</p>
             
+            <!-- Alamat Footer -->
+            <p class="text-gray-400 text-sm mb-8"><i class="fa-solid fa-location-dot text-red-500 mr-2"></i>RT.003/RW.004, Padurenan, Mustika Jaya, Bekasi, West Java 16340</p>
+            
+            <!-- Button Cek Unit -->
+            <div class="mb-10">
+                <a href="https://maps.app.goo.gl/Vodq49pFBrwGDB8q8" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <i class="fa-solid fa-map-location-dot"></i> Cek Unit
+                </a>
+            </div>
+
             <!-- Kontak di Footer -->
             <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 mb-8 text-base md:text-lg font-semibold">
                 <!-- WA Footer -->
@@ -298,11 +302,12 @@
         </div>
     </footer>
 
-    <!-- STICKY WHATSAPP BUTTON -->
+    <!-- STICKY WHATSAPP BUTTON DENGAN TEKS -->
     <a href="https://wa.me/6281290325709?text=Hallo%20bang%20Andri%20saya%20mau%20tanya%20ketersediaan%20mobilnya%20dong" 
        target="_blank" 
-       class="btn-whatsapp fixed bottom-8 right-8 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300">
-        <i class="fa-brands fa-whatsapp text-4xl"></i>
+       class="btn-whatsapp fixed bottom-8 right-8 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white py-3 px-6 rounded-full flex items-center justify-center gap-3 shadow-2xl transition-all duration-300">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="font-bold text-sm md:text-base">Hubungi Bang Andri Disini</span>
     </a>
 
     <!-- Scripts -->
@@ -310,8 +315,8 @@
     <script>
         // Inisialisasi AOS Animation
         AOS.init({
-            once: true, // Animasi hanya berjalan satu kali
-            offset: 100, // Offset sebelum animasi dimulai
+            once: true,
+            offset: 100,
         });
 
         // Script untuk merubah warna background navbar saat scroll
